@@ -3,6 +3,7 @@
 ## 打赏
 
 - 如果您觉得对您有帮助，可随意打赏。
+image(https://github.com/YouAreOnlyOne/SmartBookmark/blob/master/img/alipay.png)
 
 ## 加入
 
