@@ -1,0 +1,50 @@
+{
+    "name": "SmartBookmark",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "search from your bookmarks and go to the desired page",
+    "browser_action": {
+        "default_icon": "/img/logo.jpg",
+        "default_popup": "popup.html"
+    },
+     "content_scripts": [
+      {
+        "js": ["/js/data.js","/js/jquery-3.4.1.min.js"],
+        "matches": [
+          "http://*/*",
+          "https://*/*"
+        ],
+        "run_at": "document_start",
+        "all_frames": false
+      }
+    ],
+    "permissions": [
+        "bookmarks",
+        "storage",
+        "contextMenus", // 右键菜单
+        "tabs", // 标签
+        "notifications", // 通知
+        "webRequest", // web请求
+        "webRequestBlocking",
+        "http://*/*",
+        "https://*/*"
+    ],
+
+    // 普通页面能够直接访问的插件资源列表，如果不设置是无法直接访问的
+    "web_accessible_resources": ["js/data.js"],
+    // 插件主页，这个很重要，不要浪费了这个免费广告位
+    "homepage_url": "https://github.com/YouAreOnlyOne/",
+    
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "commands": {
+      "_execute_browser_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+F",
+          "mac": "MacCtrl+Shift+F"
+        },
+        "description": "Opens hello.html"
+      }
+    }
+}

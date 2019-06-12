@@ -1,0 +1,107 @@
+div,input,ul,li{
+    margin: 0;
+    padding: 0;
+}
+.choosed{
+    background-color: #FFCC99;
+}
+
+body{
+    margin: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #aaa;
+    font-family: 'Microsoft Yahei'
+}
+div.wrap{
+    width: 600px;
+    height: 550px;
+    margin: 0px 2px;
+    background-color: rgb(255,255,244);
+    overflow-y: hidden;
+}
+div button{
+    margin: 8px;
+}
+input{
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 100%;
+    border:none;
+    border-bottom: 2px solid #ccc;
+    height: 50px;
+    outline: none;
+    line-break: 50px;
+    font-size: 100%;
+    background: rgba(255,255,216,0.5);
+}
+ul{
+    list-style-type: none;
+    height: 500px;
+    width: 100%;
+    overflow-y: auto;
+}
+::-webkit-scrollbar-track-piece{
+    width:5px;
+    background-color:#fff ;  
+}
+::-webkit-scrollbar{
+    width:5px;
+    height:6px ; 
+}
+::-webkit-scrollbar-thumb{
+    height:50px;
+    background:#95bda1;   
+    cursor:pointer;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#95bda1;
+    cursor:pointer;
+}
+li{
+    padding: 5px 5px 4px 10px;
+    height: 50px;
+    line-height: 20px;
+    border-bottom: 1px dashed #ccc;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+li:hover{
+    cursor: pointer;
+}
+.good-match{
+    color: #366;
+}
+.bookmark-url,
+.bookmark-route{
+    font-size: 61.8%;
+    font-weight: normal;
+}
+.bookmark-title,
+.bookmark-url{
+    width: 90%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.bookmark-route{
+    position: absolute;
+    display: block;
+    right: 0px;
+    top: 0px;
+    padding-top: 5px;
+    text-align: right;
+}
+.bookmark-route span{
+    color: #ffc;
+    background-color: #336666;
+    border-radius: 2px;
+    padding: 0px 2px;
+}
+li:not(.good-match) .bookmark-route span{
+    background-color: #aaa;
+}

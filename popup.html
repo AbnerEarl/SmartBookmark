@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 配置允许访问外部请求 -->
+    <!-- <meta http-equiv="Content-Security-Policy"
+          content="connect-src *; default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+<div class="wrap">
+    <input type="text" id="search-input" autocomplete="off">
+    <ul id="search-result">
+        <li class="">
+            <span class="bookmark-name">es6入门打卡</span>
+            <span class="bookmark-route">a/b</span>
+            <br>
+            <span class="bookmark-url">http://good.com</span>
+        </li>
+        <li class="choosed">
+            <span class="bookmark-name">es6入门打卡</span>
+            <span class="bookmark-route">a/b</span>
+            <br>
+            <span class="bookmark-url">http://good.com</span>
+        </li>
+    </ul>
+</div>
+
+<!-- onclick="window.open('https://github.com/YouAreOnlyOne/PersonalNotes','_self')" -->
+<div><button>导入书签</button><button>导出书签</button><button id="btnopinion">意见反馈</button><button id="btnhelp">使用帮助</button><button>手动同步</button><button>登录帐号</button><button id="payjoin" name="btnpayjoin">打赏参与</button></div>
+
+<script type="text/javascript" src="js/popup.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+</body>
+</html>
